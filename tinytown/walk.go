@@ -26,14 +26,14 @@ type Meta struct {
 	MinClientVersion  int     `json:"min_client_version"` // minimum pipeline version
 	Alphabet          string  `json:"alphabet"`
 	URLTemplate       string  `json:"url_template"`
-	RequestDelay      float64 `json:"request_delay"`     // i.e. 0.5
+	RequestDelay      float64 `json:"request_delay"`     // e.g. 0.5
 	RedirectCodes     []int   `json:"redirect_codes"`    // HTTP codes
 	NoRedirectCodes   []int   `json:"no_redirect_codes"` // HTTP codes
 	UnavailableCodes  []int   `json:"unavailable_codes"` // HTTP codes
 	BannedCodes       []int   `json:"banned_codes"`      // HTTP codes
 	BodyRegex         string  `json:"body_regex"`
 	LocationAntiRegex string  `json:"location_anti_regex"`
-	Method            string  `json:"method"` // HTTP method, i.e. "head"
+	Method            string  `json:"method"` // HTTP method, e.g. "head"
 	Enabled           bool    `json:"enabled"`
 	Autoqueue         bool    `json:"autoqueue"`
 	NumCountPerItem   int     `json:"num_count_per_item"`

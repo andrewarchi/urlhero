@@ -57,7 +57,7 @@ type filesMeta struct {
 type FileMeta struct {
 	Name     string          `xml:"name,attr"`   // filename, relative to root
 	Source   string          `xml:"source,attr"` // "original", "metadata", or "derivative"
-	Format   string          `xml:"format"`      // i.e. "Text", "Metadata", "Unknown"
+	Format   string          `xml:"format"`      // e.g. "Text", "Metadata", "Unknown"
 	Original string          `xml:"original"`
 	BTIH     jsonutil.Hex    `xml:"btih"` // BitTorrent info-hash
 	ModTime  timefmt.UnixSec `xml:"mtime"`

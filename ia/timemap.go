@@ -21,8 +21,8 @@ import (
 type TimemapOptions struct {
 	MatchPrefix bool     // whether url is a prefix (* wildcard is appended)
 	Collapse    string   // field to collapse by; earliest captures with unique field is kept
-	Fields      []string // i.e. urlkey,timestamp,endtimestamp,original,mimetype,statuscode,digest,redirect,robotflags,length,offset,filename,groupcount,uniqcount
-	Limit       int      // i.e. 100000
+	Fields      []string // e.g. urlkey,timestamp,endtimestamp,original,mimetype,statuscode,digest,redirect,robotflags,length,offset,filename,groupcount,uniqcount
+	Limit       int      // e.g. 100000
 }
 
 // GetTimemap gets a list of Internet Archive captures of the given URL.

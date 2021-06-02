@@ -17,10 +17,10 @@ import (
 var Tracker = "https://tracker.archiveteam.org:1338"
 
 type Health struct {
-	HTTPStatusCode    int                     // i.e. 200
-	HTTPStatusMessage string                  // i.e. "OK"
-	GitHash           []byte                  // i.e. 80ffc526a8b3fd188e6f73fab7b425af61f45d28
-	Projects          []string                // IDs of all projects, including disabled ones, i.e. "bitly_6"
+	HTTPStatusCode    int                     // e.g. 200
+	HTTPStatusMessage string                  // e.g. "OK"
+	GitHash           []byte                  // e.g. 80ffc526a8b3fd188e6f73fab7b425af61f45d28
+	Projects          []string                // IDs of all projects, including disabled ones, e.g. "bitly_6"
 	ProjectStats      map[string]ProjectStats // key: project ID
 }
 
@@ -39,7 +39,7 @@ func GetHealth() (*Health, error) {
 	var health struct {
 		HTTPStatusCode    int                 `json:"http_status_code"`
 		HTTPStatusMessage string              `json:"http_status_message"`
-		GitHash           string              `json:"git_hash"` // i.e. "b'80ffc526a8b3fd188e6f73fab7b425af61f45d28'"
+		GitHash           string              `json:"git_hash"` // e.g. "b'80ffc526a8b3fd188e6f73fab7b425af61f45d28'"
 		Projects          []string            `json:"projects"`
 		ProjectStats      map[string][2]int64 `json:"project_stats"`
 	}

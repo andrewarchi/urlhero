@@ -18,7 +18,7 @@ type ItemMeta struct {
 	Identifier     string   `xml:"identifier"`
 	Collections    []string `xml:"collection"`
 	Description    string   `xml:"description"`
-	Mediatype      string   `xml:"mediatype"` // i.e. "software"
+	Mediatype      string   `xml:"mediatype"` // e.g. "software"
 	Subject        string   `xml:"subject"`
 	Title          string   `xml:"title"`
 	Uploader       string   `xml:"uploader"`

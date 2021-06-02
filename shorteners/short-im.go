@@ -14,6 +14,7 @@ import (
 
 // TODO RSS feed at http://short.im/feed.rss
 // TODO shrink multiple URLs at http://short.im:80/multishrink.html
+// TODO determine whether reboot shares links
 
 // ShortIm describes the Short.i'm short.im link shortener.
 var ShortIm = &Shortener{
